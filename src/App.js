@@ -1,9 +1,10 @@
 import React from "react";
 import { createGlobalStyle } from "styled-components";
+import TodoTemplate from "./components/TodoTemplate";
 
 const GlobalStyle = createGlobalStyle`
   body{
-    background#e9ecef;
+    background:#e9ecef;
   }
 `;
 
@@ -11,7 +12,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <div>first</div>
+      <TodoTemplate>first</TodoTemplate>
     </>
   );
 }
