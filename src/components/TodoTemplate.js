@@ -12,11 +12,10 @@ const TodoTemplateBlock = styled.div`
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  color: black;
 `;
 
-function TodoTemplate({ Children }) {
-  return <TodoTemplateBlock>{Children}</TodoTemplateBlock>;
+function TodoTemplate({ children }) {
+  return <TodoTemplateBlock>{children}</TodoTemplateBlock>;
 }
 
 export default TodoTemplate;
